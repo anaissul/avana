@@ -1,0 +1,17 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #353535;
+    background-color: #f6f6f6;
+    line-height: 1.4rem;
+}
+
+::selection {
+    background-color: #fb5353;
+    color: #fff;
+    text-shadow: none;
+}
+
+ .wrapper {
+    width:60%;
+    margin: 70px auto;
+ }

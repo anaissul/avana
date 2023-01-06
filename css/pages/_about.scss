@@ -1,0 +1,37 @@
+.bg {
+    background-color: $rouge;
+    color: #fff;
+    padding:50px;
+    line-height: 2rem;
+    font-size: 17px;
+}
+
+.gallery {
+    display: flex;
+    gap: 20px;
+
+    .team-img {
+        width:376px;
+        overflow: hidden;
+
+        img  {
+            display: block;
+            object-fit: cover;
+        }
+
+        &::before {
+            content:"";
+            transition: .8s all ease-in-out;
+        }
+        
+        &:hover::before {
+            content: "";
+            background: rgba(251, 83, 83, 0.596);
+            position:absolute;
+            height: 100%;
+            width:33%;
+            display:inline-block;
+            z-index: 10;
+        }
+    }
+}
