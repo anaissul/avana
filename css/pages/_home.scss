@@ -1,11 +1,13 @@
 .colonnes {
     display: flex;
-    flex-wrap: wrap;
     gap:30px;
 }
 
+.colonne {
+    width:50%;
+}
+
 .text {
-    width:499px;
     height:499px;
     display: flex;
     flex-direction: column;
@@ -23,7 +25,6 @@
 }
 
 .box {
-    width:499px;
     object-fit: cover;
     position:relative;
     transition: .3s all ease-in-out;
@@ -47,6 +48,7 @@
         width:100%;
         transition: .3s all ease-in-out;
         z-index: 30;
+        line-height: 2rem;
 
         span {
             letter-spacing: 1px;
@@ -60,17 +62,18 @@
 
 .box::before {
     content:"";
-    transition: .8s all ease-in-out;
-}
-
-.box:hover::before {
-    content: "";
     background: rgba(251, 83, 83, 0.596);
     position:absolute;
     height:100%;
     width:110%;
     display:inline-block;
     z-index: 10;
+    opacity:0;
+    transition: .8s all ease-in-out;
+}
+
+.box:hover::before {
+    opacity:1;
 }
 
 .box:hover span {

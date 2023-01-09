@@ -1,0 +1,51 @@
+.work-details {
+   .work {
+    width:30%
+   }
+   .details {
+    width:70%;
+   }
+   h1 {
+    color: #343434;
+    font-size: 36px;
+    font-weight: 800;
+    margin:0
+   }
+   h2 a {
+    display: block;
+    margin-top:-25px;
+    color: #fb5353;
+    font-size: 18px;
+    font-weight: 800;
+    padding-top: 3px;
+    text-decoration: none;
+   }
+   h2 a:hover {
+    color:black;
+   }
+    p {
+    font-size: 16px;
+    color: #666666;
+    line-height: 30px;
+    margin-bottom: 20px;
+    font-weight: 300;
+    }
+    a i {
+    color: #0d0d0d;
+    padding-left: 10px;
+    }
+    a:hover i {
+        color:$rouge;
+    }
+
+}
+
+
+
+.work-img {
+    text-align: center;
+    img {
+        width:100%;
+        margin-bottom:30px;
+    }
+}
